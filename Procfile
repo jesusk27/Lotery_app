@@ -1,1 +1,1 @@
-web: gunicorn Lotery_app.wsgi --log-file -
+web: gunicorn Loterias_app.wsgi --log-file -
