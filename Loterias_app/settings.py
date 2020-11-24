@@ -26,7 +26,7 @@ SECRET_KEY = '&^yx%8=#1dju&s%s*ygxe!u^k0&puwtb9vf$oe2do!!t)%8=@u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.55', '186.150.113.232', '127.0.0.1','jmlopez.pythonanywhere.com']
+ALLOWED_HOSTS = ['192.168.1.55', '186.150.113.232', '127.0.0.1','loterias-app.herokuapp.com']
 
 # Application definition
 
