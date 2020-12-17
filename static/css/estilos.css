@@ -100,7 +100,7 @@ body{
 .loteria-loto{
     position: relative;
     left:103% ;
-    bottom: 208%;
+    bottom: 207.7%;
 }
 .loteria-loto .img-container .number{
 color:black;
@@ -157,15 +157,14 @@ color:black;
 }
 
 .piep{
-    width: 97%;
+    width: 98%;
     height: 30px;
     font-size:x-small;
     font-weight: bold;
     text-align: center;  
-    background: red;
     top:235px;
     right: 3px;
-    color: #FFF;
+    color:blue
 	}
 /*.piep:before{
     content: "";
@@ -179,7 +178,7 @@ color:black;
     
 }*/
 
-.pie_f{
+/*.pie_f{
     background: blue;
     color:white;
     font-size: xx-small;
@@ -187,9 +186,9 @@ color:black;
     bottom:0;
     position:fixed;
         /*border-left: 60px solid transparent;
-    /*border-top: 100px solid #428bca;*/
+    /*border-top: 100px solid #428bca;
     font: message-box;
-}
+}*/
 
 .acumulado21{
     width: 100%;
@@ -219,7 +218,7 @@ color:black;
 }
 .acu1{
     color:red;
-    font-size:25px;
+    font-size:50px;
     font-weight: bold;
 }
 
@@ -422,7 +421,11 @@ Full screen Modal
     height:40%;
     overflow:hidden; /* Eliminamos errores de float */
     background:#f9cc30;
-    border:#f9cc30 3px outset;
+    /*border:#f9cc30 5px outset;*/
+    border-top: 0px outset;
+    border-left:0px outset;
+    border-right: 0px outset;
+    border-bottom:#f9cc30 5px outset; ;
     margin-bottom:10px;
 }
 
@@ -438,4 +441,28 @@ header .logo {
 }   
 .datog2{
     width: 200px;
+}
+.pie_f{
+    position: relative;
+    bottom:0;
+    position:fixed;
+    height: 25%;
+}
+.anuncio{
+    position: absolute;
+    color:white;
+    width: 100%;
+    height: 0px;
+    border-color: blue;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom:50px solid blue;
+    bottom:0;
+    position:fixed;
+    font-size:x-large;
+}
+
+.itrans{
+    background-color: blue;
+    width: 100%;
 }
