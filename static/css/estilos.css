@@ -446,7 +446,7 @@ header .logo {
     position: relative;
     bottom:0;
     position:fixed;
-    height: 25%;
+    height: 15%;
 }
 .anuncio{
     position: absolute;
@@ -459,7 +459,7 @@ header .logo {
     border-bottom:50px solid blue;
     bottom:0;
     position:fixed;
-    font-size:x-large;
+    font-size:large;
 }
 
 .itrans{
