@@ -417,7 +417,7 @@ Full screen Modal
     }
   }
   header {
-	width:100%; /* Establecemos que el header abarque el 100% del documento */
+    width:100%; /* Establecemos que el header abarque el 100% del documento */
     height:40%;
     overflow:hidden; /* Eliminamos errores de float */
     background:#f9cc30;
@@ -426,7 +426,7 @@ Full screen Modal
     border-left:0px outset;
     border-right: 0px outset;
     border-bottom:#f9cc30 5px outset; ;
-    margin-bottom:10px;
+    margin-bottom:5px;
 }
 
 header .logo {
