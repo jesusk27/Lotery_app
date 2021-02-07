@@ -41,7 +41,7 @@
 		<!--div class="wrapper" encabezado con carrusel>
 			<div class="logo"-->
      <div class="resultados-loterias">
-       <img class="leidsalogo" src="/static/imagenes/leidsalogo.png" width="80">     
+       <!--img class="leidsalogo" src="/static/imagenes/leidsalogo.png" width="80"-->     
         <div id="carouselExampleSlidesOnly" class="carousel-slide" data-ride="carousel">
           <div class="carousel-inner">
                   <div class="carousel-item active" data-interval="15000">
@@ -95,7 +95,7 @@
                                 </td>         
                                 <td>  
                                   <div class="datog3" id="dato3">    
-                                      <p><h3>{{loterias.ganador}}</h3></p>
+                                      <p><h4>{{loterias.ganador}}</h4></p>
                                   </div>
                               </td>
                             </tr> 
@@ -118,6 +118,7 @@
 <!-- Modal con Slider para Publicidad-->
   <!--div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"-->
   <div class="modal" id="exampleModal"   tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-modal="true">   
+     <div class="body-modal">
      <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button> 
@@ -131,6 +132,7 @@
                    </div>
                    <div class="carousel-item">
                      <img class="Bloque3" src="static/imagenes\p4.png"  alt="Third slide">
+                 </div>
                  </div>
                  </div>
             </div>
@@ -448,7 +450,7 @@ setTimeout(hola,5000);
 setTimeout(mundo,6000);
 </script-->
 <script>
-$(document).ready(function(e) { 
+$(document).ready(function mClick(e) { 
       // Simular click
     document.getElementById("btn-fs").click();
       
@@ -466,9 +468,9 @@ function getFullscreenElement(){
        getFullscreenElement(document.documentElement);
          console.log(e);
          
-      });      
-    });
-   </script>
+          });      
+        });     
+  </script>
 
 
 </body>
