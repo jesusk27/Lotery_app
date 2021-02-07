@@ -3,7 +3,8 @@ body{
     padding: 0;
     background-color: #f9cc30 !important;
     width: 100%;
-    height: 50%;
+    min-width:600px;
+    max-width:2000px;
     overflow-x: hidden;
     overflow-y: hidden;
     /* #background-image: url(../imagenes/fondo3.png); */
@@ -193,10 +194,11 @@ color:black;
 .acumulado21{
     width: 100%;
     height: 25vh;
-    background:black;
+    background:white;
     /*text-align: justify;*/
-    color:white;
+    color:black;
     font-size:x-small;
+    font-weight: bold;
     
     
    
@@ -385,15 +387,20 @@ Full screen Modal
     width: 100%;  
 }
 .modal-content{
-    left:50%;
-    display:flex;
-    position: absolute;
-   
-}
-.modal-body{
+    width: 100%;
     height: 100vh;
-    width: 100%;   
+    position:relative; 
+    display:center;
+    top:0%;
+    left:0%; 
 }
+.body-modal{
+    width: 100%; 
+    max-height: 2000px; 
+    overflow-y: auto;
+    align-items: center;
+}
+
 
 .modal .modal-dialog {
     margin: 0;
@@ -417,7 +424,7 @@ Full screen Modal
     }
   }
   header {
-    width:100%; /* Establecemos que el header abarque el 100% del documento */
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
     height:40%;
     overflow:hidden; /* Eliminamos errores de float */
     background:#f9cc30;
@@ -425,8 +432,8 @@ Full screen Modal
     border-top: 0px outset;
     border-left:0px outset;
     border-right: 0px outset;
-    border-bottom:#f9cc30 5px outset; ;
-    margin-bottom:5px;
+    border-bottom:#f9cc30 10px outset; ;
+    margin-bottom:10px;
 }
 
 header .logo {
@@ -440,16 +447,15 @@ header .logo {
     border:5px solid red;
 }   
 .datog2{
-    width: 200px;
+    width: 170px;
+    top:0%;
 }
 .pie_f{
-    position: relative;
-    bottom:0;
-    position:fixed;
-    height: 10%;
+    bottom: -20%;
+    height: 25%;
+    display:flex;
 }
 .anuncio{
-    position: absolute;
     color:white;
     width: 100%;
     height: 0px;
@@ -457,21 +463,38 @@ header .logo {
     border-right: 20px solid transparent;
     border-left: 20px solid transparent;
     border-bottom:50px solid blue;
-    bottom:0;
-    position:fixed;
-    font-size:15px;
+    font-size:20px;
+    display:fixed;
 }
 
 .itrans{
     background-color: blue;
     width: 100%;
 }
+.control-modal{
+    background-color: white;
+    opacity: 0%;
+}
+.flex-container{
+    width: 100%;
+    height: 50%;
+    background-color: DodgerBlue;
+    margin-bottom:20px;
+      
+}
+.flex-item{
+    border-right: 80px solid transparent;
+    border-top: 100px solid white;
+}
+#CloseModal{
+    position: fixed;
+}
 
 .leidsalogo{
     width: 200px;
     height: 150px;
     position:absolute;
-    left: 115%;
+    left: 113%;
     top:23%;
     background-color: #f9cc30;
 }
