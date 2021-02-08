@@ -147,7 +147,7 @@
     </div>
   </div>
 </div-->
-    <main> 
+ 
     <!--div class="p-encabezado">
       <div class="resultados-loterias">
         <div id="carouselExampleSlidesOnly" class="carousel-slide" data-ride="carousel">
@@ -246,7 +246,7 @@
               </tr>
         </table>
       <!--div class="container"  padding-left: 1px;-->
-        <div class="container-fluid">
+       <div class="container-fluid" id="seccion-1">
 
           <div class="row">
             {% for loteria in loterias.loterias%}
@@ -410,8 +410,35 @@
                 </script>
               </script>
 
+              <script>
+                $(document).ready(function() {
+                function hideShowContainers() {
+                //Validamos si contenedor2 tiene la clase 'jsHideContainer'  
+                if ($('.loteria-la-suerte\.p.panel-default').hasClass('jsHideContainer')) {
+                //Eliminamos la clase 'jsHideContainer' para validar la parte negativa del condicional
+                $('.loteria-la-suerte\.p.panel-default').removeClass('jsHideContainer');
+                //Ocultamos el contenedor1 mientras pasan 3 segundos  
+                $('.loteria-loteria-real.panel-default').hide(5000);
+                 //Mostramos el contenedor2 mientras pasan 3 segundos
+                $('.loteria-la-suerte\.p.panel-default').show(5000);
+                } else {
+                //Ocultamos el contenedor2 mientras pasan 3 segundos
+                $('.loteria-la-suerte\.p.panel-default').hide(5000);
+                //Mostramos el contenedor1 mientras pasan 3 segundos
+                $('.loteria-loteria-real.panel-default').show(5000);
+                //Finalmente adicionamos la clase jsHideContainer para validar la parte positiva del condicional
+                $('.loteria-la-suerte\.p.panel-default').addClass('jsHideContainer');
+                            }
+                          }
+                //Ejecutamos la función para que evalue los condicionales cada 5 segundos
+            
+                  setInterval(hideShowContainers, 8000);
+                          });
+                </script>
+              </script>
+
        
-     </main>
+     
 
 
 
