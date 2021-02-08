@@ -451,9 +451,10 @@ header .logo {
     top:0%;
 }
 .pie_f{
-    bottom: -20%;
+    bottom: -12%;
     height: 20%;
     display:flex;
+	
 }
 .anuncio{
     color:white;
