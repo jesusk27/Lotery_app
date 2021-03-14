@@ -253,7 +253,7 @@
               
             <div class="col-3" style="margin-bottom: 10px; padding: 0 5px">
 
-              <div class="panel panel-default loteria-{{loteria.nombre}}" padding-left: 1px;>
+              <div class="container-fluid panel panel-default loteria-{{loteria.nombre}}" padding-left: 1px;>
                 <div class="panel-heading text-center">
                   <img class="logo-loteria" src="/static/imagenes/{{loteria.nombre}}.png" width="200"> 
                   <!--p>Sorteo de Lunes a Sábado a las 08:55 PM / Domingos 05:55 PM.-->
@@ -261,7 +261,7 @@
                         
 
                 </div>
-                <div class="panel-body numeros-sorteos">
+                <div class="container-fluid panel-body numeros-sorteos">
                   <div class="row">
 
                   {% for numero in loteria.numeros %}
