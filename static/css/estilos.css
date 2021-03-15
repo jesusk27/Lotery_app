@@ -533,10 +533,28 @@ header .logo {
   and (min-width : 1224px) {  
 /* Styles */  
 }  
+   @media only screen  
+  and (min-width : 1600px) {  
+/* Styles */  
+}  
+   @media only screen  
+  and (min-width : 1680px) {  
+/* Styles */  
+}  
+
 /* Large screens ----------- */  
+   @media only screen  
+  and (min-width : 1776px) {  
+/* Styles */  
+} 
 @media only screen  
 and (min-width : 1824px) {  
 /* Styles */  
 }  
+@media only screen  
+  and (min-width : 1920px) {  
+/* Styles */  
+} 
+
 
 
