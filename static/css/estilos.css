@@ -63,7 +63,7 @@ body{
 }  
 
 /*cambiando color a los numeros sorteo Kino Tv*/
-.loteria-super-kino .img-container .number{ 
+/*.loteria-super-kino .img-container .number{ 
     color: blue;   
     text-decoration: none solid rgb(68, 68, 68);
     font-style: normal;
@@ -71,7 +71,7 @@ body{
     text-transform: none;
     font-size: x-small;
     margin-top: -50%;
-}
+}*/
 .loteria-super-kino{
    visibility: hidden;
 }
