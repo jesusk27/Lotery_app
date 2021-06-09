@@ -109,6 +109,18 @@
 				<!--/div-->
 	
   </header>
+
+  <!--table class="table table-bordered">
+    <tbody>
+     <tr>
+       <td><span></span>></td>
+       <td>Quiniela Pale</td>
+       <td>La Suerte</td>
+       <td>La Primera</td>
+     </tr>
+   </tbody>
+ </table>
+
   <!--button id="btn-fs" type="button" name="button">Pantalla Completa</button>
 
  <!--div class="flex-container">
@@ -251,13 +263,13 @@
           <div class="row">
             {% for loteria in loterias.loterias%}
               
-            <div class="col-3" style="margin-bottom: 10px; padding: 0 5px">
+            <div class="col-xl-3" style="margin-bottom: 15px; padding: 0 10px">
 
               <div class="panel panel-default loteria-{{loteria.nombre}}" padding-left: 1px;>
                 <div class="panel-heading text-center">
-                  <img class="logo-loteria" src="/static/imagenes/{{loteria.nombre}}.png" width="200"> 
+                  <img class="logo-loteria" src="/static/imagenes/{{loteria.nombre}}.png" width="400"> 
                   <!--p>Sorteo de Lunes a Sábado a las 08:55 PM / Domingos 05:55 PM.-->
-                        <p class="fe_sorteos">{{loteria.fecha_res}}</p>
+                        <!--p class="fe_sorteos">{{loteria.fecha_res}}</p-->
                         
 
                 </div>
@@ -266,19 +278,20 @@
 
                   {% for numero in loteria.numeros %}
 
-                    {% if loteria.numeros|length > 10 %}
-                    <div class="offset-s1 col-2">
-                      {% elif loteria.numeros|length == 3 %}
+                    {% if loteria.numeros|length == 3 %}
+                    <div class="offset-s1 col-4">
+                      {% elif loteria.numeros|length < 10 %}
                       {% if forloop.first%}
-                      <div class="offset-2 col-3">
+                      <!--div class="offset-2 col-3"-->
+                        <div class="offset-1 col-4">
                         {% else %}
                         <div class="col-3">
                           {% endif %}
-                          {% elif loteria.numeros|length < 10 %}
+                          {% elif loteria.numeros|length > 10 %}
                           <div class="offset-s1 col-4">
                             {% endif %}
                             <div class='img-container'>
-                              <img class="logo-loteria" src="/static/imagenes/resultado-numero.png" width="50">
+                              <img class="logo-loteria" src="/static/imagenes/bbolo2.png" width="400%">
                               <div class="number">
                               {% if loteria.numeros|length == 8 %}
                                 {% if forloop.last %}
@@ -290,7 +303,8 @@
                                 {% endif %}
                                 
                               {% else %}
-                              <h4><strong>{{numero}}</strong></h4>
+                             
+                              <font size=250><strong>{{numero}}</strong></font>
                               {% endif %}
                               </div>
 
@@ -306,7 +320,8 @@
                       </div>
                       <footer  class="piep">
                         <span id="piep" class="piep"></span>
-                        {{loteria.dias_venta}}
+                        <!--{{loteria.dias_venta}}-->
+                        {{loteria.fecha_res}}
                       </footer>            
       
                                 </div>
@@ -355,7 +370,7 @@
               <!--script src="/static/jquery/jquery.modal.js"></script>    
               <script src="/static/jquery/jquery.modal.min.js"></script>          
               <!--Mostrar y Oculta las Loterias Nacional y Nacional Gana Mas-->
-                <script>
+                <!--script>
                 $(document).ready(function() {
                 function hideShowContainers() {
                 //Validamos si contenedor2 tiene la clase 'jsHideContainer'  
@@ -383,7 +398,7 @@
               </script>
               
               <!--Mostrar y Oculta las Loterias Pega3 y Quiniela Pale-->
-              <script>
+              <!--script>
                 $(document).ready(function() {
                 function hideShowContainers() {
                 //Validamos si contenedor2 tiene la clase 'jsHideContainer'  
@@ -435,7 +450,7 @@
                   setInterval(hideShowContainers, 8000);
                           });
                 </script>
-              </script>
+              </script-->
 
        
      
@@ -443,7 +458,7 @@
 
 
 
-<script>
+<!--script>
 
  function hideShowModal(){
   
@@ -460,7 +475,7 @@ jQuery('#exampleModal').on('hidden.bs.modal', function hideModal (e) {
 } 
 setInterval(hideShowModal,60000);
   
- </script>
+ </script-->
 
  
 <!--script type="text/javascript">
