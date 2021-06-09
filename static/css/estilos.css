@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     /*background-color: #f9cc30 !important;*/
-    background-image:  url(../static\fondo2.jpg);
+    background-image:  url(../static/fondo2.jpg);
     width: 100%;
     height: 50%;
     overflow-x: hidden;
