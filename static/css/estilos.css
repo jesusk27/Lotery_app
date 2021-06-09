@@ -1,10 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #f9cc30 !important;
+    /*background-color: #f9cc30 !important;*/
+    background-image:  url(../imagenes/fondo2.jpg);
     width: 100%;
-    min-width:600px;
-    max-width:2000px;
+    height: 50%;
     overflow-x: hidden;
     overflow-y: hidden;
     /* #background-image: url(../imagenes/fondo3.png); */
@@ -26,27 +26,37 @@ body{
 }
 
 .img .logo-loteria{
-    width: 50px; 
-    height: 50px;
+    width: 450px; 
+    height: 450%;
 }
 .panel-default{
-    height: 245px; 
-    border: 5px;
+    height: 120%;
+    width: 90%; 
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
     background: white;
+    
 }
 .img-container {
     position: relative;
     text-align: center;  
+    background-image:none;
+    width: 100%;
+    height: 120%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
 }
 
 .panel .panel-default{
-    width: 100%;
-    height: 35%;
+    width: 95%;
+    height: 120%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
 }
 
 .img-container .number {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color:red;    
@@ -59,24 +69,93 @@ body{
     font-style: normal;
     font-variant: small-caps;
     text-transform: none;
+    font-size: x-small;
     margin-top: -50%;
 }
+.loteria-super-kino{
+    visibility: hidden;
+}
+.loteria-loto-pool{
+    visibility: hidden;
+}
+.loteria-quiniela-pale{
+    visibility: hidden;
+}
+.loteria-pega-mas{
+    display:none;
+    
+}
+.loteria-loto{
+    visibility: hidden;
+}
+.loteria-loteria-real{
+    position: absolute;
+    bottom: 305%;
+    left: 10%;
+    
+}
+.loteria-loteria-nacional{
+    position: absolute;
+    bottom: 305%;
+    left: 10%;
+}
+.loteria-loteria-nacional-gana-mas{
+    position: absolute;
+    bottom: 305%;
+    left: 10%;
+}
+.loteria-loteka\.p{
+    position: relative;
+    bottom: 325%;
+    left: 8%;
+}
+.loteria-la-suerte\.p{
+    position: absolute;
+    bottom:  225%;
+    left: 110%;
+}
+.loteria-la-primera\.p{
+    position: absolute;
+    bottom: 225%;
+    left: 110%;
+}
+
+
+.loteria-loteria-real .img-container .logo-loteria{
+    position: relative;
+   width: 400%;
+   left: 10%;
+   border-radius: 100%;
+}
+
+
    /*Retirando imagen de los bolos sorteo Kino Tv*/           
 .loteria-super-kino .img-container .logo-loteria{
     visibility: hidden;}
 
+    /*.loteria-loteria-nacional{
+                top:250%;
+      }
+      .loteria-la-primera\.p.panel-default{
+          position: relative;
+        bottom:260%;
+}*/
 .loteria-loteria-real .img-container .number{
     color: darkgreen;
-    font-size:large;
+    font-size:50px;
+    size: 100px;
 }
-
+/*.loteria-loteria-real .img-container .logo-loteria{
+    width: 100%;
+    height: 35%;
+}
 .loteria-loteria-real{
     position: absolute;
    
    
 }
 
-.loteria-la-suerte\.p.panel-default{
+/*.loteria-la-suerte\.p.panel-default{
     position: relative;
     bottom:103.4%;
     z-index:loteria-real; 
@@ -101,8 +180,9 @@ body{
 .loteria-loto{
     position: relative;
     left:103% ;
-    bottom: 207.7%;
+    bottom: 208%;
 }
+*/
 .loteria-loto .img-container .number{
 color:black;
 }
@@ -158,28 +238,29 @@ color:black;
 }
 
 .piep{
-    width: 98%;
+    width: 104%;
     height: 30px;
-    font-size:x-small;
+    font-size:80%;
     font-weight: bold;
     text-align: center;  
-    top:233px;
-    right: 3px;
-    color:blue
+    background: red;
+    bottom:-5%;
+    left: -2%;
+    color: #FFF;
 	}
-/*.piep:before{
+.piep:before{
     content: "";
     position: absolute;
-    top:-10px;
+    top:-5px;
     left:0px;
-    border-left:5px solid transparent;
-    border-right:5px solid black;
-    border-top:5px solid transparent;
-    border-bottom:5px solid ;
+    border-left:3px solid transparent;
+    border-right:3px solid red;
+    border-top:3px solid transparent;
+    border-bottom:3px solid red;
     
-}*/
+}
 
-/*.pie_f{
+.pie_f{
     background: blue;
     color:white;
     font-size: xx-small;
@@ -187,18 +268,17 @@ color:black;
     bottom:0;
     position:fixed;
         /*border-left: 60px solid transparent;
-    /*border-top: 100px solid #428bca;
+    /*border-top: 100px solid #428bca;*/
     font: message-box;
-}*/
+}
 
 .acumulado21{
     width: 100%;
     height: 25vh;
-    background:white;
+    background:black;
     /*text-align: justify;*/
-    color:black;
+    color:white;
     font-size:x-small;
-    font-weight: bold;
     
     
    
@@ -387,20 +467,15 @@ Full screen Modal
     width: 100%;  
 }
 .modal-content{
-    width: 100%;
+    left:50%;
+    display:flex;
+    position: absolute;
+   
+}
+.modal-body{
     height: 100vh;
-    position:relative; 
-    display:center;
-    top:0%;
-    left:0%; 
+    width: 100%;   
 }
-.body-modal{
-    width: 100%; 
-    max-height: 2000px; 
-    overflow-y: auto;
-    align-items: center;
-}
-
 
 .modal .modal-dialog {
     margin: 0;
@@ -424,16 +499,14 @@ Full screen Modal
     }
   }
   header {
+    top: 0%;
 	width:100%; /* Establecemos que el header abarque el 100% del documento */
-    height:40%;
+    height:50%;
     overflow:hidden; /* Eliminamos errores de float */
-    background:#f9cc30;
-    /*border:#f9cc30 5px outset;*/
-    border-top: 0px outset;
-    border-left:0px outset;
-    border-right: 0px outset;
-    border-bottom:#f9cc30 10px outset; ;
+    background:white;
+    border:#f9cc30 10px outset;
     margin-bottom:10px;
+    background-image:  url(../imagenes/fondo2.jpg);
 }
 
 header .logo {
@@ -447,114 +520,58 @@ header .logo {
     border:5px solid red;
 }   
 .datog2{
-    width: 170px;
-    top:0%;
-}
-.pie_f{
-    bottom: -120px;
-    height: 20%;
-    display:flex;
-	
-}
-.anuncio{
-    color:white;
-    width: 100%;
-    height: 0px;
-    border-color: blue;
-    border-right: 20px solid transparent;
-    border-left: 20px solid transparent;
-    border-bottom:50px solid blue;
-    font-size:20px;
-    display:fixed;
-}
-
-.itrans{
-    background-color: blue;
-    width: 100%;
-}
-.control-modal{
-    background-color: white;
-    opacity: 0%;
-}
-.flex-container{
-    width: 100%;
-    height: 50%;
-    background-color: DodgerBlue;
-    margin-bottom:20px;
-      
-}
-.flex-item{
-    border-right: 80px solid transparent;
-    border-top: 100px solid white;
-}
-#CloseModal{
-    position: fixed;
-}
-
-.leidsalogo{
     width: 200px;
-    height: 150px;
-    position:absolute;
-    left: 113%;
-    top:23%;
-    background-color: #f9cc30;
 }
 
-@media (min-width:320px)  { 
-    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-        table, p{
-        padding-right: 1em;
-        width: 100%;
-        }
-     }
-    @media (min-width:480px)  { 
-    /* smartphones, Android phones, landscape iPhone */ 
-    }
-    @media (min-width:600px)  { 
-    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
-    }
-    @media (min-width:801px)  { 
-    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-    }
-     @media (min-width:922px)  { 
-    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-    }
-	
-    @media (min-width:1025px) { 
-    /* big landscape tablets, laptops, and desktops */ 
-    }
+.box {
+    width: 200px; height: 300px;
+    position: relative;
+    border: 1px solid #BBB;
+    background: #EEE;
+  }
+  .ribbon {
+    position: absolute;
+    bottom: 5px;
+    overflow: hidden;
+    width: 100px; height: 75px;
+    text-align: right;
+  }/*
+  .piep span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(25deg);
+    -webkit-transform: rotate(180deg);
+    width: 120px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 21px; right: -21px;
+  }/*
+  .piep span::before {
+    content: "";
+    position: absolute; 
+    left: 0px; 
+    top: 100%;
+    border-left: 5px solid #79A70A;
+    border-right: 5px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79A70A;
    
-    @media (min-width:1281px) { 
-    /* hi-res laptops and desktops */ 
-    }
-
-    /* Desktops and laptops ----------- */  
-   @media only screen  
-  and (min-width : 1224px) {  
-/* Styles */  
-}  
-   @media only screen  
-  and (min-width : 1600px) {  
-/* Styles */  
-}  
-   @media only screen  
-  and (min-width : 1680px) {  
-/* Styles */  
-}  
-
-/* Large screens ----------- */  
-   @media only screen  
-  and (min-width : 1776px) {  
-/* Styles */  
-} 
-@media only screen  
-and (min-width : 1824px) {  
-/* Styles */  
-}  
-@media only screen  
-  and (min-width : 1920px) {  
-/* Styles */  
-} 
-
-
-
+  }*/
+  
+  .piep :after {
+    content: "";
+    position: absolute; left: 98%; bottom: 102%;
+    border-left:4px solid red;;
+    border-right:3px solid transparent;
+    border-top:3px solid transparent;
+    border-bottom:3px solid red;
+  
+}
+    
